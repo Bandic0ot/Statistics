@@ -1,7 +1,7 @@
 ## step by step calculation without using a function 
 
 ## read survey data
-agsrs <- read.csv ("data/agsrs.csv")
+agsrs <- read.csv ("~/Development/Statistics/STAT\ 348/R/data/agsrs.csv")
 
 ## extract the variable of interest
 sdata <- agsrs$acres92
@@ -31,7 +31,7 @@ srs_mean_est <- function (sdata, N = Inf)
     c (Est. = ybar, S.E. = se.ybar, ci.low = ybar - mem, ci.upp = ybar + mem)
 }
 
-agsrs <- read.csv ("data/agsrs.csv")
+agsrs <- read.csv ("~/Development/Statistics/STAT\ 348/R/data/agsrs.csv")
 
 # inference for mean of variable acres92
 srs_mean_est (agsrs[,"acres92"], N = 3078)
@@ -46,7 +46,7 @@ srs_mean_est (acres92.is.fewer.200k, N = 3078)
 srs_mean_est (acres92.is.fewer.200k, N = 3078) * 3078
 
 ####################### compare with true value ################################
-agpop <- read.csv ("data/agpop.csv", na = "-99")
+agpop <- read.csv ("~/Development/Statistics/STAT\ 348/R/data/agpop.csv", na = "-99")
 #true mean
 mean (agpop[, "acres92"], na.rm = T)
 # true total
