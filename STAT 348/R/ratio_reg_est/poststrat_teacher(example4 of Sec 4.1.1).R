@@ -1,6 +1,6 @@
-source ("estimates.r")
+source ("~/Development/Statistics/STAT\ 348/R/estimates.r")
 
-teacher <- read.csv ("data/college_teacher.csv")
+teacher <- read.csv ("~/Development/Statistics/STAT 348/R/data/college_teacher.csv")
 n <- nrow (teacher)
 yh <- tapply (teacher$teacher, INDEX = teacher$gender, FUN = mean); yh
 sh <- tapply (teacher$teacher, INDEX = teacher$gender, FUN = sd); sh

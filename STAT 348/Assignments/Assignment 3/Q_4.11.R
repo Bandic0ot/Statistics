@@ -2,7 +2,7 @@
 source ("~/Development/Statistics/STAT\ 348/R/estimates.r")
 counties <- read_csv("~/Development/Statistics/STAT 348/R/data/counties.csv")
 
-#Variables
+# Variables
 N <- 3148
 n <- 100
 physicians <- counties$physician
