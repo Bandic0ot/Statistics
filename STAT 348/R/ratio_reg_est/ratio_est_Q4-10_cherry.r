@@ -1,6 +1,6 @@
-source ("estimates.r")
+source ("~/Development/Statistics/STAT\ 348/R/estimates.r")
 
-cherry <- read.csv ("data/cherry.csv", header = T)
+cherry <- read.csv ("~/Development/Statistics/STAT\ 348/R/data/cherry.csv", header = T)
 
 pdf ("ratio_est_cherry.pdf")
 
